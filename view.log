@@ -1,0 +1,53 @@
+2018-06-03 00:18:47 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: infospider)
+2018-06-03 00:18:47 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (default, May 11 2018, 04:00:52) - [GCC 8.1.0], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.16.12-1-ARCH-x86_64-with-arch-Arch-Linux
+2018-06-03 00:18:47 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'infospider', 'COOKIES_ENABLED': False, 'DEPTH_PRIORITY': 1, 'DOWNLOAD_DELAY': 0.25, 'LOG_FILE': 'view.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'infospider.spiders', 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue', 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue', 'SPIDER_MODULES': ['infospider.spiders']}
+2018-06-03 00:18:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-03 00:18:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-03 00:18:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-03 00:18:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['infospider.pipelines.JsonPipeline']
+2018-06-03 00:18:47 [scrapy.core.engine] INFO: Spider opened
+2018-06-03 00:18:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-03 00:19:12 [scrapy.crawler] INFO: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+2018-06-03 00:19:12 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-06-03 00:19:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 26636,
+ 'downloader/request_count': 98,
+ 'downloader/request_method_count/GET': 98,
+ 'downloader/response_bytes': 1823322,
+ 'downloader/response_count': 98,
+ 'downloader/response_status_count/200': 98,
+ 'dupefilter/filtered': 4947,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 6, 2, 16, 19, 17, 330702),
+ 'item_scraped_count': 75,
+ 'log_count/INFO': 8,
+ 'memusage/max': 578174976,
+ 'memusage/startup': 578174976,
+ 'request_depth_max': 2,
+ 'response_received_count': 98,
+ 'scheduler/dequeued': 98,
+ 'scheduler/dequeued/memory': 98,
+ 'scheduler/enqueued': 668,
+ 'scheduler/enqueued/memory': 668,
+ 'start_time': datetime.datetime(2018, 6, 2, 16, 18, 47, 742345)}
+2018-06-03 00:19:17 [scrapy.core.engine] INFO: Spider closed (shutdown)
